@@ -1,10 +1,14 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Dashboard } from './pages/Dashboard'
 
 function App () {
   return (
-    <>
-      <h1>Initial setup</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Dashboard/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
