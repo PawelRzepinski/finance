@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
-import { Sidebar } from '../molecule/Sidebar/Sidebar'
+import { Sidebar } from '../molecules/Sidebar/Sidebar'
 
 interface MainTemplateProps {
   children: ReactNode
