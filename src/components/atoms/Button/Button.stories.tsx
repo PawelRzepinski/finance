@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { Button } from './Button'
 
 export default {
-  title: 'Atoms/Button',
+  title: 'Atoms/Buttons/Button',
   component: Button
 } as ComponentMeta<typeof Button>
 
@@ -16,6 +16,3 @@ export const Secondary: ComponentStory<typeof Button> = (arg) => <Button {...arg
 Secondary.args = {
   onClick: () => console.log('Klik secondary')
 }
-
-// export const Toggler: ComponentStory<typeof Button> = (arg) => <Toggler {...arg}>Toggler</Toggler>
-// Toggler.args = {}

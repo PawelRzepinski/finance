@@ -1,14 +1,8 @@
 import { MainTemplate } from '../components/templates/MainTemplate'
-import React, { useContext } from 'react'
-import { SidebarProvider } from '../context'
+import React from 'react'
 
-export const Dashboard = () => {
-  const context = useContext(SidebarProvider)
-
-  console.log(context)
-  return (
+export const Dashboard = () => (
     <MainTemplate>
       <p>it is firs children</p>
     </MainTemplate>
-  )
-}
+)

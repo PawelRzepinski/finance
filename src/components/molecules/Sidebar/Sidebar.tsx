@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { Logo } from '../../atoms/Logo/Logo'
+import { Button } from '../../atoms/Button/Button'
+import { SidebarContext } from '../../../context'
 
 export const Sidebar = () => {
+  const { isSidebarOpen, setIsSidebarOpen } = useContext(SidebarContext)
+
   return (
     <SidebarWrapper>
-      <ToggleBtn onClick={() => console.log('func')}>x</ToggleBtn>
+      <ToggleButton onClick={() => setIsSidebarOpen(!isSidebarOpen)} view='square'>
+        x
+      </ToggleButton>
       <Logo/>
       <div>navigation</div>
     </SidebarWrapper>
@@ -20,17 +26,9 @@ const SidebarWrapper = styled.section`
   color: ${({ theme }) => theme.colors.white[80]};
 `
 
-const ToggleBtn = styled.button`
+const ToggleButton = styled(Button)`
   position: absolute;
   top: 35px;
   right: 0;
   transform: translate(50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  border: none;
-  border-radius: ${({ theme }) => theme.borderRadius.circle};
-  background-color: pink;
 `
