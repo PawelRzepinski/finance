@@ -27,10 +27,16 @@ export const theme: DefaultTheme = {
       10: 'rgba(255, 255, 255, 0.1)'
     },
     gray: {
-      50: '#F5F7FA'
+      50: '#F8F9FC'
     },
     secondary: {
-      10: '#1A1C1E'
+      10: '#323B47'
     }
+  },
+  borderRadius: {
+    s: '4px',
+    m: '6px',
+    l: '8px',
+    circle: '50%'
   }
 }

@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 import { Sidebar } from '../molecules/Sidebar/Sidebar'
+import { MainHeader } from '../molecules/MainHeader/MainHeader'
 
 interface MainTemplateProps {
   children: ReactNode
@@ -10,6 +11,7 @@ export const MainTemplate = ({ children }: MainTemplateProps) => (
   <MainTemplateWrapper>
     <Sidebar />
     <ContentWrapper>
+      <MainHeader />
       {children}
     </ContentWrapper>
   </MainTemplateWrapper>
@@ -17,7 +19,7 @@ export const MainTemplate = ({ children }: MainTemplateProps) => (
 
 const MainTemplateWrapper = styled.main`
   display: grid;
-  grid-template-columns: 280px auto;
+  grid-template-columns: 260px auto;
   width: 100vw;
   height: 100vh;
 `
