@@ -13,14 +13,15 @@ interface ButtonProps {
 
 // eslint-disable-next-line no-undef,react/display-name
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, className, disabled, onClick, wide, ...props }) => {
+  ({ children, className, disabled, onClick, ...props }) => {
     // eslint-disable-next-line no-undef
     const refContainer = useRef<HTMLButtonElement>(null)
     return (
-      <ButtonWrapper className={className} disabled={disabled} onClick={onClick} wide={wide} ref={refContainer} {...props}>{children}</ButtonWrapper>
+      <ButtonWrapper className={className} disabled={disabled} onClick={onClick} ref={refContainer} {...props}>{children}</ButtonWrapper>
     )
   }
 )
+
 const ButtonWrapper = styled.button<Pick<ButtonProps, 'view' | 'size'>>`
   overflow: hidden;
   display: flex;

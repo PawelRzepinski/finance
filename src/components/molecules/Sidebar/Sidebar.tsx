@@ -9,9 +9,9 @@ export const Sidebar = () => {
 
   return (
     <SidebarWrapper>
-      <ToggleButton onClick={() => setIsSidebarOpen(!isSidebarOpen)} view='square'>
+       <ToggleButton onClick={() => setIsSidebarOpen(!isSidebarOpen)} view='square'>
         x
-      </ToggleButton>
+       </ToggleButton>
       <Logo/>
       <div>navigation</div>
     </SidebarWrapper>
