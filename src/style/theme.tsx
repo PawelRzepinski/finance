@@ -2,6 +2,7 @@ import { DefaultTheme } from 'styled-components'
 
 export const theme: DefaultTheme = {
   colors: {
+    transparent: 'transparent',
     black: {
       100: 'rgba(0, 0, 0, 1)',
       90: 'rgba(0, 0, 0, 0.9)',

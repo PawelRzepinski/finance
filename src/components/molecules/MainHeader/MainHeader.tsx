@@ -1,10 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Avatar } from '../../atoms/Avatar/Avatar'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import AvatarImg from '../../../assets/avatarImg.jpg'
 
 export const MainHeader = () => (
   <MainHeaderWrapper>
     <span>search</span>
-    <span>user account</span>
+    <Avatar initials='PR' image={AvatarImg} />
   </MainHeaderWrapper>
 )
 

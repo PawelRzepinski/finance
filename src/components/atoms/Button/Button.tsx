@@ -1,12 +1,13 @@
 import React, { forwardRef, ReactNode, useRef } from 'react'
 import styled, { css } from 'styled-components'
+import { ComponentSize } from '../../../types'
 
 interface ButtonProps {
   children: ReactNode
   className?: string
   disabled?: boolean
   onClick: () => void
-  size?: 'small' | 'medium' | 'large'
+  size?: ComponentSize
   view?: 'primary' | 'secondary' | 'square'
   wide?: boolean
 }

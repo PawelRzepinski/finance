@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { Button } from './Button'
 
 export default {
-  title: 'Atoms/Buttons/Button',
+  title: 'Atoms/Button',
   component: Button,
   argTypes: {
     size: {
