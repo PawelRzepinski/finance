@@ -1,8 +1,14 @@
 import { MainTemplate } from '../components/templates/MainTemplate'
 import React from 'react'
+import { Card } from '../components/molecules/Card/Card'
 
 export const Dashboard = () => (
     <MainTemplate>
-      <p>it is firs children</p>
+      <Card>
+        <p>it is firs children</p>
+      </Card>
+      <Card>
+        It is card component
+      </Card>
     </MainTemplate>
 )

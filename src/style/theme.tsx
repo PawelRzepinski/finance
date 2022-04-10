@@ -29,6 +29,13 @@ export const theme: DefaultTheme = {
     gray: {
       50: '#F8F9FC'
     },
+    primary: {
+      50: '#FFB10A', // default
+      40: '#FFBE33',
+      30: '#FFCB5C',
+      20: '#FFD885',
+      10: '#FFE5AD'
+    },
     secondary: {
       10: '#323B47'
     }
